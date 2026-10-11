@@ -1,0 +1,40 @@
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore local configuration files
+*.env
+
+# Ignore SQL Server-related files
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore temporary or backup files
+*.log
+*.bak
+*.tmp
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore exported data or diagrams (if applicable)
+*.csv
+*.png
+*.pdf
+
+# Include the project source datasets
+!/datasets/source_crm/cust_info.csv
+!/datasets/source_crm/prd_info.csv
+!/datasets/source_crm/sales_details.csv
+!/datasets/source_erp/CUST_AZ12.csv
+!/datasets/source_erp/LOC_A101.csv
+!/datasets/source_erp/PX_CAT_G1V2.csv
+
+# Include the project documentation diagrams
+!/docs/data_architecture.png
+!/docs/data_flow.png
+!/docs/data_integration.png
+!/docs/data_model.png
+!/docs/ETL.png
